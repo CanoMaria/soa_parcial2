@@ -98,11 +98,6 @@ public class Historico implements Serializable, UserDetails{
 		this.indicador = indicador;
 	}
 
-	@Override
-	public String toString() {
-		return "{id_historico :" + id_historico + ", fechaHoraRecepcion:" + fechaHoraRecepcion + ", categoria:"
-				+ categoria + ", subCategoria:" + subCategoria + ", indicador:" + indicador + ", valor:" + valor+"}" ;
-	}
 
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
