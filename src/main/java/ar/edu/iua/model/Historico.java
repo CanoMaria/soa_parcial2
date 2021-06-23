@@ -46,19 +46,9 @@ public class Historico implements Serializable, UserDetails{
 	@Column(length = 100,nullable = false)
 	private String indicador;
 	
-	@Column(length = 100,nullable = false)
-	private double valor;
 	
 
 	//-------Setters and Getters---------
-
-	public double getValor() {
-		return valor;
-	}
-
-	public void setValor(double d) {
-		this.valor = d;
-	}
 
 	public long getId_historico() {
 		return id_historico;

@@ -44,12 +44,7 @@ public class HistoricoBusiness implements IHistoricoBusiness{
 	@Override
 	public Historico add(Historico historico) throws BusinessException {
 		try {
-			
-			Historico history = historico;
-			String str=historico.toString();
-			history.setRawData(str);
-			
-			return historicoDAO.save(history);
+			return historicoDAO.save(historico);
 		} catch (Exception e) {
 			throw new BusinessException(e);
 		}
